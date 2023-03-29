@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios clases</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="fondo">
+    <h1 class="titulo_principal">EJERCICIOS JS</h1>
+    <!--Ejercicio 1 operaciones-->
+    <div class="ejercicios">
+        <h3>1.Dado dos numeros mostrar la suma, resta, division y multiplicación de ambos</h3>
+        <label for="numeros">Primer número</label><br>
+        <input type="number" id="number1" name="numeros"><br>
+        <label for="numeros">Segundo número</label><br>
+        <input type="number" id="number2" name="numeros"><br>
+        <button class="boton" onclick="suma()">SUMA</button>
+        <button class="boton" onclick="resta()">RESTA</button>
+        <button class="boton" onclick="multiplicacion()">MULTIPLICACIÓN</button>
+        <button class="boton" onclick="division()">DIVISIÓN</button>
+    </div>
+    <!--Ejercicio 2 conversion grados-->
+    <div class="ejercicios">
+        <h3>2. Escribir un programa que convierta un valor de °F a °C</h3>
+        <label for="numeros">Ingrese los grados a convertir</label><br>
+        <input type="number" id="gradosConvertir" name="grados"><br>
+        <button class="boton" onclick="gradosConversion1()">°F a °C</button>
+        <button class="boton" onclick="gradosConversion2()">°C a °F</button>
+    </div>
+    <!--Ejercicio 3 horas-minutos-->
+    <div class="ejercicios">
+        <h3>3. Realice un programa que reciba una cantidad de minutos y muestre por pantalla
+            ¿A cuantas horas y minutos corresponde?
+        </h3>
+        <label for="numeros">Ingrese una cantidad de horas a convertir</label><br>
+        <input type="number" id="horas_Ingresadas" name="horas"><br>
+        <button class="boton" onclick="convertirHoras()">Convertir horas</button>
+    </div>
+    <!--Ejercicio 4-Descuento-->
+    <div class="ejercicios">
+        <h3>4.Realice un programa que permita ingresar un descuento y de el total, valor de descuento y valor de compra
+        </h3>
+        <label for="numeros">Ingrese el descuento</label><br>
+        <input type="number" id="descuento" name="desc"><br>
+        <label for="numeros">Ingrese el valor de compra</label><br>
+        <input type="number" id="valorCompra" name="valcompra"><br>
+        <button class="boton" onclick="calcularDescuento()">Calcular</button>
+    </div>
+    <!--Ejercicio 5-Exposición validar-->
+    <div class="ejercicios">
+        <h3>5. Ejercicio exposición </h3>
+        <label for="text">Ingrese su nombre</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="texto">¿Pertenece a algún programa de articulación?</label><br>
+        <input type="text" id="articulacion" name="ariticulacion"><br>
+
+        <label for="texto">Ingrese su edad</label><br>
+        <input type="text" id="edad" name="edad"><br>
+
+        <label for="texto">¿Tiene apoyos de adicionales como jovenes en acccion o familias en accion?</label><br>
+        <input type="text" id="sostenimiento" name="sostenimiento"><br>
+
+        <label for="texto">Ingrese el valor de su promedio</label><br>
+        <input type="text" id="promedio" name="prom"><br>
+
+        <button class="boton" onclick="validar()">Aplicar</button>
+    </div>
+    <!--Ejercicio 6-Exposición edad-->
+    <div class="ejercicios">
+        <h3>6. Ingrese la edad y determine si es menor de edad, joven, mayor de edad, adulto mayor</h3>
+        <label for="numeros">Ingrese su edad</label><br>
+        <input type="number" id="edadIngresada" name="edad"><br>
+        <button class="boton" onclick="edad()">Calcular edad</button>
+    </div>
+    <!--Ejercicio 7-Parejas numeros-->
+    <div class="ejercicios">
+        <h3>7. Dados tres números enteros determinar si la suma de cualquier pareja de ellos es igual al tercer número.
+            Si se cumple la condición escribir el mensaje de que son iguales y en caso contrario son distintos</h3>
+        <label for="numeros">Ingrese primer número</label><br>
+        <input type="number" id="primerNumero" name="primerNumero"><br>
+        <label for="numeros">Ingrese segundo número</label><br>
+        <input type="number" id="segundoNumero" name="segundoNumero"><br>
+        <label for="numeros">Ingrese tercer número</label><br>
+        <input type="number" id="tercerNumero" name="tercerNumero"><br>
+        <button class="boton" onclick="calcularPareja()">Calcular pareja</button>
+    </div>
+    <!-- Ejercicio 8 Divisas -->
+    <div class="ejercicios">
+        <h3>8. Una persona desea invertir su dinero lo mejor posible a través de la compra venta de dólare. Se sabe que
+            durante el segundo trimestre del año el dólar baja un 6% respecto al primer trimestre y durante el cuarto
+            trimestre aumenta un 9% respecto al tercer trimestre.<br>Sabiendo que el precio del dólar a principio de año
+            fué 3.800 calcule la cantidad de dolares que tiene un inversionista dada una cantidad en pesos y un mes del
+            año en especifico. PENDIENTE
+        </h3>
+        <label for="numeros">Ingrese la cantidad de pesos</label><br>
+        <input type="number" id="pesosIngresados" name="pesosIngresados"><br>
+        <label for="numeros">Ingrese el mes inicial para realizar el cálculo</label><br>
+        <select name="mesIngresado" id="mesIngresado">
+            <option value="01">Enero</option>
+            <option value="02">Febrero</option>
+            <option value="03">Marzo</option>
+            <option value="04">Abril</option>
+            <option value="05">Mayo</option>
+            <option value="06">Junio</option>
+            <option value="07">Julio</option>
+            <option value="08">Agosto</option>
+            <option value="09">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select><br>
+        <label for="numeros">Ingrese el mes final para realizar el cálculo</label><br>
+        <select name="mesFinal" id="mesFinal">
+            <option value="01">Enero</option>
+            <option value="02">Febrero</option>
+            <option value="03">Marzo</option>
+            <option value="04">Abril</option>
+            <option value="05">Mayo</option>
+            <option value="06">Junio</option>
+            <option value="07">Julio</option>
+            <option value="08">Agosto</option>
+            <option value="09">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select><br>
+        <button class="boton" onclick="calcularDivisas()">Calcular divisas</button>
+    </div>
+    <!--Ejercicio 9 caracter-->
+    <div class="ejercicios">
+        <h3>9. Leer un caracter y deducir si esta o no comprendido entre las teclas i y m</h3>
+        <label for="numeros">Ingrese un caracter</label><br>
+        <input type="text" id="caracter" name="caracter"><br>
+        <button class="boton" onclick="caracter()">Calcular</button>
+    </div>
+    <!--Ejercicio 10 coordenadas-->
+    <div class="ejercicios">
+        <h3>10. Leer las coordenada cartesianas (x,y) de un punto del plano y calcular e imprimir el cuadrante al cual
+            pertenece el punto (I,II,III,IV)</h3>
+        <label for="numeros">Ingrese la coordenada x</label><br>
+        <input type="text" id="x" name="ejeX"><br>
+        <label for="numeros">Ingrese la coordenada y</label><br>
+        <input type="text" id="y" name="ejeY"><br>
+        <button class="boton" onclick="coordenadas()">Calcular coordenada</button>
+    </div>
+    <!--Ejercicio 11 horas-->
+    <div class="ejercicios">
+        <h3>11. Se tiene un reloj de 24 horas representado hhmm desde las horas de 0 a 24 y los minutos de 0 a 59,
+            calcular las horas y minutos comprendidas entre dos horas ingresadas</h3>
+        <label for="numeros">Ingrese la hora inicial</label><br>
+        <input type="text" id="hora_inicial" name="hora_inicial"><br>
+        <label for="numeros">Ingrese la hora final</label><br>
+        <input type="text" id="hora_final" name="hora_final"><br>
+        <button class="boton" onclick="calcularTiempo()">Calcular tiempo</button>
+    </div>
+    <!-- Ejercicio 12 Exposicion bucles-for -->
+    <div class="ejercicios">
+        <h3>12. Elija el ejercicio a realizar
+        </h3>
+        <label for="numeros">Ingrese la opción</label><br>
+        <select name="ejercicio" id="ejercicio">
+            <option value="01">While</option>
+            <option value="02">Do while</option>
+        </select><br>
+        <button class="boton" onclick="evaluar()">Ejecutar</button>
+        <div id="bucle"></div>
+    </div>
+    <!--Ejercicio 13 conversión-->
+    <div class="ejercicios conversion">
+        <h3>13. Mostrar en pantalla un menú para convertir medidas
+        </h3>
+        <label for="numeros">Ingrese la opción</label><br>
+        <select name="conversion_ejercicio" id="conversion_ejercicio">
+            <option value="01">Pulgadas a Centímetros</option>
+            <option value="02">Centímetros a Pulgadas</option>
+            <option value="03">Kilometros a Metros</option>
+            <option value="04">Milímetros a Metros</option>
+        </select><br>
+        <button class="boton" onclick="conversion()">Ejecutar</button>
+    </div>
+    <!--Ejercicio 14 valor x-->
+    <div class="ejercicios">
+        <h3>14. Dado el valor de x, calcule en valor de y como resultado de la siguiente función.
+        </h3>
+        <input id="valor_X" style="border: 2px solid black; width: 12%; height: 4vh;"></input><br>
+        <button class="boton" onclick="calcularY()">Calcular Y</button>
+    </div>
+    <!--Ejercicio 15 Categoria vendedor-->
+    <div class="ejercicios conversion">
+        <h3>15. Solicite la entrada de la categoría de un vendedor y las ventas del último mes. Calcule el pago teniendo
+            en cuenta la tabla dada por el instructor.
+        </h3>
+        <label for="numeros">Ingrese la opción</label><br>
+        <select name="categorias" id="categorias">
+            <option value="0"></option>
+            <option value="1">Categoria 1</option>
+            <option value="2">Categoria 2</option>
+            <option value="3">Categoria 3</option>
+            <option value="4">Categoria 4</option>
+            <option value="5">Categoria 5</option>
+        </select><br>
+        <label for="text">Ingrese las ventas del mes</label><br>
+        <input id="ingresos" style="border: 2px solid black; width: 12%; height: 4vh;"></input><br>
+        <button class="boton" onclick="ventas()">Ejecutar</button>
+    </div>
+    <!--Ejercicio 16-Arbol-->
+    <div class="ejercicios">
+        <h3>16. Para destruir el jefe deberas crear un arbol de navidad con * usando el bucle for de JS</h3>
+        <label for="numeros">Ingrese qué tan grande quiere el árbol</label><br>
+        <input type="number" id="tamañoNumero" name="tamañoNumero"><br>
+        <button class="boton" onclick="hacerArbol()">Contruir</button>
+        <div id="result" class="result"> </div>
+    </div>
+    <!--PARCIAL-->
+    <div class="ejercicios">
+        <h3>17. Elabore un menú que permita dar solución a los siguientes algoritmos.
+        </h3>
+        <label for="numeros">Ingrese la opción</label><br>
+        <select name="categorias" id="categoria">
+            <option value="0"></option>
+            <!-- 1. Elabore un programa que permita ingresar un numero de 5 cifras y luego imprimir el numero
+            invertido asi como el numero descompuesto en cifras individuales. Ejemplo: Si ingresa el numero
+            12345, debe imprimir el 54321 y luego el numero 1, 2, 3, 4 y 5.-->
+            <option value="1">Categoria 1</option>
+            <!--2. Elabore un algoritmo que permita ingresar el peso en kg de 5 estudiantes y partir de allí calcule las
+            siguientes estadísticas.
+            - El promedio de peso de los estudiantes
+            - El peso que mas se repite-->
+            <option value="2">Categoria 2</option>
+            <!--3. Cree un algoritmo que imprima los primeros 10 resultados de la tabla del 5, usando para esto el
+            ciclo while.-->
+            <option value="3">Categoria 3</option>
+            <!-- 4. Elabore un algortimo que permita calcular el costo a pagar por estacionar un vehiculo en un
+            parquedero. Tener en cuanta que el costo por hora o fracción es de $2.500 para vehiculo de 4
+            ruedas y $1.100 para vehículos de 2 ruedas. Si la tarifa es nocturna, es decir esta entre las 8:00 PM
+            y las 6 AM tendrá un aumento la tarifa a cobrar del 5%-->
+            <option value="4">Categoria 4</option>
+        </select><br>
+        <button class="boton" onclick="ejercicioParcial()">Ejecutar</button>
+    </div>
+
+
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
